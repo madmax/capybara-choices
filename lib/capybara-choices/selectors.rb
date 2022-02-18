@@ -12,7 +12,7 @@ module CapybaraChoices
     end
 
     SearchInputSelectors = {
-      '9' => '.choices__list.is-active input.choices__input'
+      '9' => '.choices[data-type*=\'select-one\'] .choices__list.is-active input.choices__input, .choices[data-type*=\'select-multiple\'].is-open input.choices__input'
     }.freeze
 
     def search_input_selector(choices_version)
